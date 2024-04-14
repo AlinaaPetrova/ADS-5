@@ -14,7 +14,8 @@ std::string infx2pstfx(std::string inf) {
             strinng += inf[i];
             strinng += ' ';
         } else {
-            if (stack1.isEmpty() == 1 || inf[i] == '(' || mapp[inf[i]] > mapp[stack1.get()]) {
+            if (stack1.isEmpty() == 1 || inf[i] == '('
+                || mapp[inf[i]] > mapp[stack1.get()]) {
                 stack1.push(inf[i]);
             } else if (inf[i] == ')') {
                 while (stack1.get() != '(') {
