@@ -5,7 +5,6 @@
 
 template<typename T, int size>
 class TStack {
-
  private:
     static const int SSize = size;
     T data[SSize];
